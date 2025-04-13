@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Posture Detector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(145deg, #f7f8fa, #dee3ea);
+      color: #333;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;  /* Use the modern font */
+      font-size: 56px;  /* Adjust size as needed */
+      text-align: center;
+      background: linear-gradient(90deg, #0d0320, #fd7ab7); /* Update gradient to a more minimalistic one */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Add subtle shadow for depth */
+      color: black;
+    }
+    
+
+    section {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      color: #444;
+    }
+
+    p, li {
+      font-size: 18px;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    .button {
+      display: block;
+      margin: 60px auto 0;
+      padding: 16px 40px;
+      background: #222;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .button:hover {
+      background: #000;
+      transform: scale(1.05);
+    }
+
+    /* Flex layout for first section */
+    .posture-layout {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .posture-text {
+      flex: 1 1 400px;
+    }
+
+    .posture-image {
+      flex: 1 1 350px;
+      text-align: center;
+    }
+
+    .posture-image img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Posture Detector</h1>
+
+  <section>
+    <div class="posture-layout">
+      <div class="posture-text">
+        <h2>What Is Good Posture?</h2>
+        <p>
+          Good posture is how you position and hold your body—whether you’re sitting, standing, or moving.
+          Proper posture helps you move efficiently, reduces fatigue, and avoids putting unnecessary stress on your muscles and joints.
+        </p>
+      </div>
+      <div class="posture-image">
+        <img src="file:///D:/Projects/i%20hope%20this%20works/pics/ex2.jpg" alt="Good Posture Example">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Benefits of Good Posture</h2>
+    <ul>
+      <li>Reduces back, neck, and shoulder pain</li>
+      <li>Boosts energy and reduces fatigue</li>
+      <li>Improves breathing and circulation</li>
+      <li>Supports bone and joint health</li>
+      <li>Improves confidence and appearance</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tips for Sitting Posture</h2>
+    <ul>
+      <li>Place both feet flat on the ground or a footrest</li>
+      <li>Keep your knees level with or slightly lower than your hips</li>
+      <li>Use the backrest to support your lower back fully</li>
+      <li>Relax your shoulders and keep your arms close to your body</li>
+      <li>Position your screen at eye level to avoid tilting your head</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What Happens When You Start Detection?</h2>
+    <p>
+      Once detection begins, your camera will track your posture in real-time using body mapping technology.
+      It will analyze your sitting position and provide alerts if improper posture is detected.
+    </p>
+  </section>
+
+  <a href="/detect" class="button">Start Detection</a>
+</body>
+</html>

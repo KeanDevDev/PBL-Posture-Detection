@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posture Detector</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f8fa;  /* Soft background */
+      color: #333;  /* Dark text for readability */
+      padding: 60px 20px;
+      line-height: 1.6;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;  /* Modern font */
+      font-size: 56px;  /* Larger size for prominence */
+      color: black;  /* Black color */
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 16px 40px;
+      background: linear-gradient(to right, #00ff88, #00ccff);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 40px;
+      text-align: center;
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+
+    a.button:hover {
+      background: linear-gradient(to right, #00ccff, #00ff88);
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Posture Detector</h1>
+  <p>
+    Maintaining good posture helps reduce back and neck pain, increases focus, and improves confidence. Proper sitting posture includes:
+  </p>
+  <ul>
+    <li>Feet flat on the floor</li>
+    <li>Knees at a 90-degree angle</li>
+    <li>Back straight and shoulders relaxed</li>
+    <li>Head aligned with your spine</li>
+  </ul>
+  <p>Click below to start posture detection using your webcam:</p>
+  <a href="/detect" class="button">Start Detection</a>
+</body>
+</html>
