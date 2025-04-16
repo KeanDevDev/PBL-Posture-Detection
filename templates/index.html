@@ -33,7 +33,6 @@
       color: black;
     }
     
-
     section {
       background: #ffffff;
       border: 1px solid #ddd;
@@ -58,11 +57,11 @@
     }
 
     p, li {
-      font-size: 18px;
-      margin-top: 10px;
-      line-height: 1.6;
+      font-size: 23px;
+      margin-top: 30px;
+      line-height: 1.8;
     }
-
+    
     ul {
       padding-left: 25px;
     }
@@ -88,7 +87,7 @@
       transform: scale(1.05);
     }
 
-    /* Flex layout for first section */
+    /* Existing flex container for the first section */
     .posture-layout {
       display: flex;
       gap: 30px;
@@ -111,6 +110,30 @@
       border-radius: 14px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
+
+    /* New flex container for the benefits and tips sections */
+    .flex-section {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .flex-section > .text-part {
+      flex: 1 1 300px;
+    }
+
+    .flex-section > .image-part {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .flex-section img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -126,31 +149,45 @@
         </p>
       </div>
       <div class="posture-image">
-        <img src="file:///D:/Projects/i%20hope%20this%20works/pics/ex2.jpg" alt="Good Posture Example">
+        <img src="https://media.healthdirect.org.au/images/inline/original/how-to-improve-your-posture-ppdrbd-07bedd.jpg" alt="Good Posture Example">
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Benefits of Good Posture</h2>
+    <div class="flex-section">
+      <div class="text-part">
+        <ul>
+          <li>Reduces back, neck, and shoulder pain</li>
+          <li>Boosts energy and reduces fatigue</li>
+          <li>Improves breathing and circulation</li>
+          <li>Supports bone and joint health</li>
+          <li>Improves confidence and appearance</li>
+        </ul>
+      </div>
+      <div class="image-part">
+        <img src="https://content.artofmanliness.com/uploads/2016/03/Benefits-2.jpg" alt="Benefits of Good Posture">
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Benefits of Good Posture</h2>
-    <ul>
-      <li>Reduces back, neck, and shoulder pain</li>
-      <li>Boosts energy and reduces fatigue</li>
-      <li>Improves breathing and circulation</li>
-      <li>Supports bone and joint health</li>
-      <li>Improves confidence and appearance</li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Tips for Sitting Posture</h2>
-    <ul>
-      <li>Place both feet flat on the ground or a footrest</li>
-      <li>Keep your knees level with or slightly lower than your hips</li>
-      <li>Use the backrest to support your lower back fully</li>
-      <li>Relax your shoulders and keep your arms close to your body</li>
-      <li>Position your screen at eye level to avoid tilting your head</li>
-    </ul>
+    <div class="flex-section">
+      <div class="text-part">
+        <ul>
+          <li>Place both feet flat on the ground or a footrest</li>
+          <li>Keep your knees level with or slightly lower than your hips</li>
+          <li>Use the backrest to support your lower back fully</li>
+          <li>Relax your shoulders and keep your arms close to your body</li>
+          <li>Position your screen at eye level to avoid tilting your head</li>
+        </ul>
+      </div>
+      <div class="image-part">
+        <img src="https://claritypt.com/wp-content/uploads/2022/10/Goodposture.jpg" alt="Good Sitting Posture">
+      </div>
+    </div>
   </section>
 
   <section>
