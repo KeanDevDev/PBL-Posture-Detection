@@ -86,7 +86,9 @@ def detect():
 
 @app.route('/video')
 def video():
+    print("Starting video stream...")
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
 
 @app.route('/status')
 def status():
